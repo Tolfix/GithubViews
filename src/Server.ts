@@ -58,7 +58,7 @@ server.get("/", async (req, res) => {
     const format = {
         label: label ?? "Visitors",
         color: color ?? "green",
-        message: User?.views,
+        message: (parseInt(User?.views)).toLocaleString("en"),
         style: style ?? "flat",
     }
 

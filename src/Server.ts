@@ -64,7 +64,7 @@ server.get("/", async (req, res) => {
 
     //@ts-ignore
     const svg = makeBadge(format);
-
+    res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
     return res.send(svg);
 });
 

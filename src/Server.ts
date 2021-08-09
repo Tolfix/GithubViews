@@ -65,6 +65,7 @@ server.get("/", async (req, res) => {
     //@ts-ignore
     const svg = makeBadge(format);
     res.setHeader("Content-Type", "image/svg+xml; charset=utf-8");
+    res.setHeader("Cache-Control", "max-age=0, no-cache, no-store, must-revalidate")
     return res.send(svg);
 });
 

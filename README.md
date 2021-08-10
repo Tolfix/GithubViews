@@ -1,14 +1,16 @@
 <p align="center">
   <img width="260" src="https://cdn.tolfix.com/images/TX-Small.png">
   <br/>
-  <strong>Github Views</strong>
+  <strong>Github Views for README</strong>
 </p>
 
 # ✨ | GithubViews
 Can be used as a badge to count visitors on your profile.
 
 # 📔 | Setup
-`![Visitors](https://githubviews.tolfix.com/?id=your_github_username)` <br/>
+```md
+![Visitors](https://githubviews.tolfix.com/?id=your_github_username)
+```
 ![Preview](https://githubviews.tolfix.com/?id=djawduihii3y893712jkakdhauwdi)
 
 # 🎨 | Customization

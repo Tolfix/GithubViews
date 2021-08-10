@@ -4,14 +4,14 @@
   <strong>Github Views</strong>
 </p>
 
-# GithubViews
+# ✨ | GithubViews
 Can be used as a badge to count visitors on your profile.
 
-# Setup
+# 📔 | Setup
 `![Visitors](https://githubviews.tolfix.com/?id=your_github_username)` <br/>
 ![Preview](https://githubviews.tolfix.com/?id=djawduihii3y893712jkakdhauwdi)
 
-# Customization
+# 🎨 | Customization
 - `&label` : The label name
   - `Preview` : **url?label=Preview** ![Preview_label](https://githubviews.tolfix.com/?id=djawduihii3y893712jkakdhauwdi&label=Preview)
 - `&style` : The style for the badge.
@@ -24,5 +24,5 @@ Can be used as a badge to count visitors on your profile.
 - `&color` : A color for the badge, can use hex colors without `#`
   - `Preview` : **url?color=red** ![Preview_Color_Green](https://githubviews.tolfix.com/?id=djawduihii3y893712jkakdhauwdi&color=red)
 
-# Discord
+# 🔮 | Discord
 [![Discord](https://discord.com/api/guilds/833438897484595230/widget.png?style=banner4)](https://discord.tolfix.com/)

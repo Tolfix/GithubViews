@@ -3,7 +3,7 @@ import express from "express";
 import mongoose from "mongoose";
 import { makeBadge, ValidationError } from 'badge-maker'
 import cors from "cors";
-import { CacheViews, Views } from "./Views";
+import { CacheViews, SaveToDB, Views } from "./Views";
 
 const server = express();
 
@@ -18,7 +18,7 @@ server.use(cors({
     credentials: true
 }));
 
-
+// process.exit(0)
 server.use(express.urlencoded({ extended: true }));
 
 server.use((req, res, next) => {

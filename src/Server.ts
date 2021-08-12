@@ -18,7 +18,6 @@ server.use(cors({
     credentials: true
 }));
 
-// process.exit(0)
 server.use(express.urlencoded({ extended: true }));
 
 server.use((req, res, next) => {
@@ -70,3 +69,8 @@ server.get("/", async (req, res) => {
 });
 
 server.listen(8080);
+
+setTimeout(() => {
+
+    process.exit()
+}, 15*1000)

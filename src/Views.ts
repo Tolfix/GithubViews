@@ -1,6 +1,5 @@
 import { model, Schema } from "mongoose"
 import { CronJob } from "cron";
-import like from "like-process";
 
 export const CacheViews = new Map<string, { views: string }>()
 
@@ -14,7 +13,6 @@ const ViewsSchema = new Schema({
 });
 
 export const Views = model("views", ViewsSchema);
-
 
 export async function SaveToDB()
 {

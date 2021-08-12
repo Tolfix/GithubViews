@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose"
 import { CronJob } from "cron";
-import ON_DEATH from "death";
+import like from "like-process";
 
 export const CacheViews = new Map<string, { views: string }>()
 
@@ -15,10 +15,6 @@ const ViewsSchema = new Schema({
 
 export const Views = model("views", ViewsSchema);
 
-
-export const OFF_DEATH = ON_DEATH(function(signal: any, err: any) {
-    SaveToDB();
-})
 
 export async function SaveToDB()
 {
@@ -44,7 +40,7 @@ export async function SaveToDB()
         user.save();
         return;
     }
-    process.exit(25)
+    Promise.resolve(true)
 }
 
 new CronJob("*/15 * * * *", SaveToDB, null, true, "Europe/Stockholm");
